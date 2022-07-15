@@ -1,7 +1,7 @@
 import os
 from datetime import timedelta
-from django.core.management.utils import get_random_secret_key
 
+from django.core.management.utils import get_random_secret_key
 from dotenv import load_dotenv
 
 load_dotenv(dotenv_path='../infra/.env')

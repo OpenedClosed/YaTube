@@ -1,14 +1,14 @@
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, viewsets
+from reviews.models import Category, Genre, Review, Title
+from users.models import CustomUser
+from users.permissions import IsAdminUserOrReadOnly, IsStaffOrAuthorOrReadOnly
 
 from .filters import TitleFilterSet
 from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, ReviewSerializer, TitleSerializer)
 from .viewsets import CreateDeleteViewSet
-from reviews.models import Category, Genre, Review, Title
-from users.models import CustomUser
-from users.permissions import IsAdminUserOrReadOnly, IsStaffOrAuthorOrReadOnly
 
 
 class CategoryViewSet(CreateDeleteViewSet):

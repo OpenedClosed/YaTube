@@ -20,7 +20,7 @@ jobs:
         # установка flake8 и его плагинов
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
         # установка зависимостей
-        pip install -r requirements.txt 
+        pip install -r api_yamdb/requirements.txt 
     - name: Test with flake8 and django tests
       run: |
         # запуск проверки проекта по flake8
@@ -68,7 +68,7 @@ jobs:
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 89639339335/yamdb_final
-          
+
   send_message:
     runs-on: ubuntu-latest
     needs: deploy

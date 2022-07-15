@@ -10,6 +10,7 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
 
 from api_yamdb import settings
+
 from .models import CustomUser
 from .permissions import IsAdmin
 from .serializers import (CustomUserSerializer, SignUpSerializer,

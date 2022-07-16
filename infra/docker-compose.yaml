@@ -10,7 +10,7 @@ services:
     image: 89639339335/yamdb_final
     restart: always
     volumes:
-      - static_value:/app/redoc/
+      - static_value:/app/static/
       - media_value:/app/media/
     depends_on:
       - db

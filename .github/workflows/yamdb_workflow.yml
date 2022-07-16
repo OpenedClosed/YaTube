@@ -78,7 +78,6 @@ jobs:
             sudo docker compose up -d
             sudo docker rmi 89639339335/yamdb_final:latest
             sudo docker compose exec -T web python manage.py migrate
-            sudo docker compose exec -T web python manage.py migrate -run-syncdb
             sudo docker compose exec -T web python manage.py createsuperuser
             sudo docker compose exec -T web python manage.py collectstatic --no-input
 

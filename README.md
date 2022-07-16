@@ -112,4 +112,4 @@
 - Ник: openclose
 - Электронная почта: opendoor200179@gmail.com
 
-![yamdb_finals workflow](https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg)
+![yamdb_final_workflow](https://github.com/OpenedClosed/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)

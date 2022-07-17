@@ -29,8 +29,8 @@ jobs:
         cd api_yamdb/
         # запустить написанные разработчиком тесты
         python manage.py test
-        # запустить тесты pytest
-        pytest
+        # запустить тесты pytest в корне проекта
+        cd ../ && pytest
 
   build_and_push_to_docker_hub:
     name: Push Docker image to Docker Hub

@@ -111,6 +111,5 @@
 ## Информация об авторе проекта
 - Ник: openclose
 - Электронная почта: opendoor200179@gmail.com
-- Ссылка на проект: http://130.193.53.76/api/v1/
 
 ![yamdb_final_workflow](https://github.com/OpenedClosed/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
